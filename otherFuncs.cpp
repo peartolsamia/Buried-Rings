@@ -16,19 +16,19 @@ int enemyDiedGetMyCoins(Hero &player)
 {
     int MinCoinDrop, MaxCoinDrop, droppedCoin;
     
-    if(whatKindOfEnemyDied = 1)
+    if(whatKindOfEnemyDied == 1)
     {
         MinCoinDrop = 0;
         MaxCoinDrop = 30;
     }
 
-    else if(whatKindOfEnemyDied = 2)
+    if(whatKindOfEnemyDied == 2)
     {
         MinCoinDrop = 50;
         MaxCoinDrop = 100;
     }
 
-    else if(whatKindOfEnemyDied = 3)
+    if(whatKindOfEnemyDied == 3)
     {
         MinCoinDrop = 200;
         MaxCoinDrop = 500;
