@@ -9093,6 +9093,8 @@ void PlayTheGame(int ChoiceFromStory, int isPlayerAlive, T &Player)
 
                 if(isPlayerAlive == -1)
                     exit(0);
+                
+                requiredStoryPart =14;
 
                 tellTheStory(*Player);
 
