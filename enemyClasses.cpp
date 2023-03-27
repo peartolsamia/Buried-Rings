@@ -653,8 +653,8 @@ void Dragon :: SpecialAttack(Hero &player, int random)//will executed every 3 tu
 Witch :: Witch()
 {
     lightOrDark = "dark boss";
-    Health = 80;
-    maxHealth = 80;
+    Health = 60;
+    maxHealth = 60;
     type = "Witch";
 }
 
@@ -707,8 +707,8 @@ void Witch :: StandardAttack(Hero &player, int rand)
 TheKing :: TheKing()
 {
     lightOrDark = "light boss";
-    Health = 120;
-    maxHealth = 120;
+    Health = 90;
+    maxHealth = 90;
     type = "The King";
 }
 
