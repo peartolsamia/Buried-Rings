@@ -9075,7 +9075,7 @@ void PlayTheGame(int ChoiceFromStory, int isPlayerAlive, T &Player)
         {
             cin>>kneel;
 
-            if(kneel == 1)
+            if(kneel == 2)
             {
                 cout<<" - Now we will see, how I trained you."<<endl<<"And he is doing his hand like he is calling you to make the first move."<<endl;
 
@@ -9083,27 +9083,27 @@ void PlayTheGame(int ChoiceFromStory, int isPlayerAlive, T &Player)
 
                 if(chosenClass == 5)
                 {
-                    isPlayerAlive = ClericCombatKingFight(*enemyK, Player);
+                    isPlayerAlive = ClericCombatKingFight(*enemyK, *Player);
                 }
 
                 else
                 {
-                    isPlayerAlive = CombatKingFight(*enemyK, Player);
+                    isPlayerAlive = CombatKingFight(*enemyK, *Player);
                 }
 
                 if(isPlayerAlive == -1)
                     exit(0);
 
-                tellTheStory(Player);
+                tellTheStory(*Player);
 
                 break;
             }
 
-            else if(kneel == 2)
+            else if(kneel == 1)
             {
-                requiredStoryPart++;
+                requiredStoryPart =15;
 
-                tellTheStory(Player);
+                tellTheStory(*Player);
 
                 break;
             }
