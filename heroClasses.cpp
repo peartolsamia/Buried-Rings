@@ -41,7 +41,7 @@ void Hero :: upgradeMaxHealth(int Coins)
     {
         maxHealth = maxHealth + (10*upgradeTimes);
 
-        cout<<"Maximum Health increased "<<upgradeTimes*5<<" HP. Now its "<<maxHealth<<" HP! "<<endl;
+        cout<<"Maximum Health increased "<<upgradeTimes*10<<" HP. Now its "<<maxHealth<<" HP! "<<endl;
 
         loseCoin(Coins);
     }
