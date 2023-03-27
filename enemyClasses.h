@@ -22,7 +22,7 @@ class Enemy
 {
     protected:
 
-    int Health{40}, maxHealth{40} , MaxCoinDrop;
+    int Health{40}, maxHealth{40} , MaxCoinDrop, enemyKind;
     string lightOrDark;
     string type;
 
@@ -41,6 +41,8 @@ class Enemy
     void setType(string Type);
 
     int getMaxHealth();
+    
+    int getEnemyKind();
 
     virtual void StandardAttack(Hero &player, int rand){}
 
