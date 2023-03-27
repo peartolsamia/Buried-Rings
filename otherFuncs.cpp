@@ -8438,7 +8438,7 @@ int CombatKingFight(TheKing &enemy1, T &player)
 
             if(enemyCnt > 0){cout<<endl<<endl<<"~ ENEMY TURN ~"<<endl;}
 
-            if(guardDown == 1)
+            if(guardDown == 1 && isEnemy1Alive)
             {
                 (enemy1).SpecialAttack(player, rand(), rand());
 
@@ -8734,7 +8734,7 @@ int ClericCombatKingFight(TheKing &enemy1, T &player)
 
             if(enemyCnt > 0){cout<<endl<<endl<<"~ ENEMY TURN ~"<<endl;}
 
-            if(guardDown == 1)
+            if(guardDown == 1 && isEnemy1Alive)
             {
                 (enemy1).SpecialAttack(player, rand(), rand());
 
